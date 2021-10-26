@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import marked from 'marked'
 import hljs from "highlight.js"
 import 'highlight.js/styles/tomorrow-night-bright.css';
@@ -24,7 +25,7 @@ function ComFAQ(props){
     } = props
 
     return (
-        <div className="use-tag" style={{position:"relative"}}>
+        <div className="use-tag">
             <div className="comp_faq_normal_1">
                 <section className="fd-desc-sect has-side">
                     <div className="fd-desc-sect-side">
@@ -49,6 +50,11 @@ function ComFAQ(props){
             </div>
         </div>
     )
+}
+
+ComFAQ.propTypes = {
+    content: PropTypes.string,
+    title: PropTypes.string
 }
 
 export default React.memo(ComFAQ)

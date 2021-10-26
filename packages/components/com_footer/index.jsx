@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import PropTypes from 'prop-types'
 
 const Footer = styled.div`
     display: flex;
@@ -18,12 +19,16 @@ function ComFooter(props) {
     } = props
     
     return (
-        <div className="use-tag" style={{position:"relative"}}>
+        <div className="use-tag">
             <Footer>
                 <img src={img_address} alt="" className="comp_footer_img_1-img" style={{width:"65px",height:"23px"}} />
             </Footer>
         </div>
     )
+}
+
+ComFooter.propTypes = {
+    img_address: PropTypes.string
 }
 
 export default React.memo(ComFooter)

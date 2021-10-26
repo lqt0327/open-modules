@@ -1,33 +1,12 @@
 import './index.sass'
-import "@babel/polyfill"
-
-// import AdvertList from './advert_list'
-// import Banner from './banner'
-// import Tab from './tabs/index'
-// import EntryTab from './tabs/entryTab'
-// import NormalList from './normalList'
-// import RowList from './rowList'
-// import OperationList from './operationList'
-// import NewList from './newList'
-// import CutList from './cutList'
-// import GridList from './gridList'
-// import GridList2 from './gridList2'
-// import Title from './title'
-// import Quote from './quote'
-// import Paragraph from './paragraph'
-// import ComImg from './com_img'
-// import ComButton from './com_button'
-// import ComFAQ from './com_faq'
-// import ComFooter from './com_footer'
-// import ComStep from './com_step'
-// // 轮播图
-// import Carousel from './carousel'
-
-// export {
-//     AdvertList, Banner, Tab, EntryTab, NormalList, RowList, OperationList, NewList, CutList, GridList, GridList2, Title, Quote, Paragraph, ComImg, ComButton, ComFAQ, ComFooter, ComStep, Carousel
-// }
 
 export { default as Advert } from './advert_list'
+export { default as LouCengBiaoTi } from './loucengbiaoti'
+export { default as LouCengJianGe } from './loucengjiange' 
+export { default as Header } from './header'
+export { default as LinkAddress } from './link_address'
+export { default as Upload } from './upload'
+export { default as Uploads } from './upload/uploads'
 export { default as Banner } from './banner'
 export { default as Tab } from './tabs/index'
 export { default as EntryTab } from './tabs/entryTab'
@@ -48,3 +27,4 @@ export { default as ComFooter } from './com_footer'
 export { default as ComStep } from './com_step'
 // 轮播图
 export { default as Carousel } from './carousel'
+export { default as EditableTagGroup } from './tags'

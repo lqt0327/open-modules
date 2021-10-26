@@ -51,8 +51,13 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "antd": "^4.16.13",
+    "classnames": "^2.3.1",
+    "highlight.js": "^11.3.1",
+    "marked": "^3.0.8",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
   },
   "readme": "ERROR: No README data found!",
   "_id": "react-template@1.0.0",

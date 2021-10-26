@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './style.sass'
 
 const Step1 = (props) => {
@@ -61,7 +62,7 @@ function ComStep(props) {
     } = props
 
     return (
-        <div className="use-tag" style={{ position: "relative" }}>
+        <div className="use-tag">
             {
                 template === 'step1' ?
                     <Step1
@@ -74,6 +75,15 @@ function ComStep(props) {
             }
         </div>
     )
+}
+
+ComStep.propTypes = {
+    children: PropTypes.arrayOf(PropTypes.shape({
+        step: PropTypes.string,
+        title: PropTypes.string,
+        desc: PropTypes.string,
+        img_address: PropTypes.string
+    }))
 }
 
 export default React.memo(ComStep)

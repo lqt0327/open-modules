@@ -1,5 +1,6 @@
 import React from 'react'
 import cx from 'classnames'
+import PropTypes from 'prop-types'
 import './style.sass'
 
 function NormalList(props) {
@@ -8,18 +9,13 @@ function NormalList(props) {
         template,
         title,
         img_address,
-        tag,
-        link_address
+        tag
     } = props
 
     return (
-        <div className="use-tag" style={{position:"relative"}}>
+        <div className="use-tag">
             <div>
-                <a 
-                href={link_address} 
-                className={cx("fd-link fd-subject comp_list_normal_2",{
-                    "reverse": template === 'normal3' ? true : false
-                })}>
+                <a className={cx("fd-link fd-subject comp_list_normal_2",{"reverse": template === 'normal3' ? true : false})}>
                     <div className={cx("fd-subject-cover",{"hide": template === 'normal1' ? true : false})} style={{backgroundImage:'url('+img_address+')'}}></div>
                     <div className="fd-subject-content">
                         <div>
@@ -41,6 +37,12 @@ function NormalList(props) {
             </div>
         </div>
     )
+}
+
+NormalList.propTypes = {
+    title: PropTypes.string,
+    tag: PropTypes.array,
+    img_address:PropTypes.string
 }
 
 export default React.memo(NormalList)

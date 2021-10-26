@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tabs } from 'antd';
+import PropTypes from 'prop-types'
 import './style.sass';
 
 const { TabPane } = Tabs;
@@ -13,7 +14,7 @@ const CompList = (arr) => {
         arr.map((item2, j) => {
             return (
                 <div key={j}>
-                    <a href={item2["link_address"]} className="fd-link fd-subject">
+                    <a className="fd-link fd-subject">
                         <div className="fd-subject-cover" style={{ backgroundImage: 'url(' + item2["img_address"] + ')' }}></div>
                         <div className="fd-subject-content">
                             <h1 className="fd-title line-cut-2">{item2["title"]}</h1>
@@ -28,12 +29,19 @@ const CompList = (arr) => {
 function Tab(props) {
 
     const {
-        children
+        changePanelStateDispatch,
+        template,
+        left_editor,
+        id,
+        children,
+        index
     } = props
 
     return (
-        <div className="use-tag" style={{ position: "relative" }}>
-            <Tabs defaultActiveKey="1" onChange={callback} centered>
+        <div className="use-tag" style={{ position: "relative" }} id={id} data-index={index}>
+            <Tabs defaultActiveKey="1" onChange={callback} centered onClick={() => {
+                changePanelStateDispatch([left_editor,template],index)
+            }}>
                 {
                     children.map((item, i) => {
                         return (
@@ -51,4 +59,21 @@ function Tab(props) {
     )
 }
 
+Tab.propTypes = {
+    changePanelStateDispatch: PropTypes.func,
+    type: PropTypes.string,
+    id: PropTypes.string.isRequired,
+    children: PropTypes.arrayOf(PropTypes.shape({
+        label: PropTypes.string,
+        children: PropTypes.arrayOf(PropTypes.shape({
+            img_address: PropTypes.string,
+            title: PropTypes.string,
+            link_address: PropTypes.string
+        }))
+    }))
+}
+
+Tab.defaultProps = {
+    type: "text"
+}
 export default React.memo(Tab)

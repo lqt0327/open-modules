@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './style.sass'
 
 function CutList(props) {
@@ -12,7 +13,7 @@ function CutList(props) {
     } = props
 
     return (
-        <div className="use-tag" style={{position:"relative"}}>
+        <div className="use-tag">
             <div>
                 <a href={link_address} className="fd-link comp_list_news_h_6">
                     {
@@ -40,5 +41,11 @@ function CutList(props) {
     )
 }
 
+CutList.propTypes = {
+    title: PropTypes.string,
+    img_address: PropTypes.string,
+    link_address: PropTypes.string,
+    desc: PropTypes.string
+}
 
 export default React.memo(CutList)

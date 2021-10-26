@@ -1,20 +1,24 @@
 import React from 'react';
 import './index.sass';
 import cx from 'classnames';
+import PropTypes from 'prop-types'
 
 function Banner(props) {
     
-    const {
+    const { 
         img_address,
-        link_address,
     } = props
     return (
-        <div className={cx("banner",props.className)} style={{position:"relative"}}>
-            <a href={link_address}>
+        <div className={cx("banner",props.className)}>
+            <a>
                 <img src={img_address} alt=""/>
             </a>
         </div>
     )
+}
+
+Banner.propTypes = {
+    img_address: PropTypes.string.isRequired,
 }
 
 export default Banner

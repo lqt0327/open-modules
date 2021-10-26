@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const EnteryNormal = styled.div`
@@ -34,28 +35,36 @@ const EnteryNormal = styled.div`
 
 function EntryTab(props) {
 
-    const {
-        children
-    } = props
+  const {
+    children,
+  } = props
 
-    return (
-        <EnteryNormal>
-            <div className="use-tag" style={{ position: "relative" }}>
-                <section className="comp_entry_normal_1">
-                    {
-                        children.map((item, i) => {
-                            return (
-                                <a href={item["link_address"]} className="comp_entry_normal_1-item" style={{ width: "25%" }} key={i}>
-                                    <img src={item["img_address"]} alt="" />
-                                    <p>{item["label"]}</p>
-                                </a>
-                            )
-                        })
-                    }
-                </section>
-            </div>
-        </EnteryNormal>
-    )
+  return (
+    <EnteryNormal>
+      <div className="use-tag" style={{ position: "relative" }}>
+        <section className="comp_entry_normal_1">
+          {
+            children.map((item, i) => {
+              return (
+                <a className="comp_entry_normal_1-item" style={{ width: "25%" }} key={i}>
+                  <img src={item["img_address"]} alt="" />
+                  <p>{item["label"]}</p>
+                </a>
+              )
+            })
+          }
+        </section>
+      </div>
+    </EnteryNormal>
+  )
+}
+
+EntryTab.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string,
+    img_address: PropTypes.string,
+    link_address: PropTypes.string
+  }))
 }
 
 export default React.memo(EntryTab);

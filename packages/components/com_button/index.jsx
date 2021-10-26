@@ -1,19 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import './style.sass'
 
 const Btn3 = (props) => {
 
-    const { text, link_address } = props
+    const { text } = props
 
     return (
         <footer className="fd-fixed-footer comp_btn_full">
             <div className="fd-fixed-footer-inner">
-                <button 
-                className="fd-button comp_btn_full-btn"
-                style={{ background: "rgb(229,177,101)" }} 
-                type="button"
-                onClick={()=>window.open(link_address,'_self')}
-                >{text}</button>
+                <button className="fd-button comp_btn_full-btn" style={{ background: "rgb(229,177,101)" }} type="button">{text}</button>
             </div>
         </footer>
     )
@@ -21,18 +17,13 @@ const Btn3 = (props) => {
 
 const Btn2 = (props) => {
 
-    const { text, link_address } = props
+    const { text } = props
 
     return (
         <footer className="fd-fixed-footer comp_btn_stick">
             <div className="fd-fixed-footer-inner">
                 <div className="comp_btn_stick-wrap">
-                    <button 
-                    className="fd-button comp_btn_stick-btn" 
-                    style={{ background: "rgb(229,177,101)" }} 
-                    type="button"
-                    onClick={()=>window.open(link_address,'_self')}
-                    >{text}</button>
+                    <button className="fd-button comp_btn_stick-btn" style={{ background: "rgb(229,177,101)" }} type="button">{text}</button>
                 </div>
             </div>
         </footer>
@@ -51,22 +42,19 @@ const Btn1 = (props) => {
 function ComButton(props) {
     const { 
         template,
-        text,
-        link_address
+        text
     } = props
 
     return (
-        <div className="use-tag" style={{ position: "relative" }}>
+        <div className="use-tag">
             {
                 template === 'btn3' ? 
                 <Btn3
                     text={text}
-                    link_address={link_address}
                 /> :
                 template === 'btn2' ?
                 <Btn2
                     text={text}
-                    link_address={link_address}
                 /> :  
                 template === 'btn1' ?
                 <Btn1 
@@ -75,6 +63,10 @@ function ComButton(props) {
             }
         </div>
     )
+}
+
+ComButton.propTypes = {
+    text: PropTypes.string
 }
 
 export default React.memo(ComButton)

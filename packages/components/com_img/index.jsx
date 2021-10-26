@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import './style.sass';
 
 function ComponentImg(props) {
@@ -6,13 +7,12 @@ function ComponentImg(props) {
     const { 
         template,
         img_address,
-        link_address,
         desc
     } = props
 
     return (
-        <div className="use-tag" style={{position:"relative"}}>
-            <div className="comp_img_2" onClick={()=>window.open(link_address,"_self")}>
+        <div className="use-tag">
+            <div className="comp_img_2">
                 <img src={img_address} alt="" className="comp_img_2-img"/>
                 {
                     template === 'img2' ? 
@@ -22,6 +22,11 @@ function ComponentImg(props) {
             </div>
         </div>
     )
+}
+
+ComponentImg.propTypes = {
+    img_address: PropTypes.string,
+    desc: PropTypes.string
 }
 
 export default React.memo(ComponentImg)

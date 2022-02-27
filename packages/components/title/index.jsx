@@ -13,7 +13,7 @@ const Normal2 = (props) => {
 const Normal1 = (props) => {
   return (
     <div className="comp_title_normal_1">
-      <div className="fd-title">{props.title}</div>
+      <div className="fd-title" style={{color: props.color || '#333'}}>{props.title}</div>
     </div>
   )
 }
@@ -75,7 +75,8 @@ function Title(props) {
 
   const {
     template,
-    title
+    title,
+    color
   } = props
 
   return (
@@ -84,7 +85,7 @@ function Title(props) {
         template === 'normal2' ?
           <Normal2 title={title} /> :
           template === 'normal1' ?
-            <Normal1 title={title} /> :
+            <Normal1 title={title} color={color} /> :
             template === 'dot3' ?
               <Dot3 title={title} /> :
               template === 'dot2' ?

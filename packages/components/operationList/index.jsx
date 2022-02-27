@@ -7,12 +7,16 @@ function OperationList(props) {
 
   const {
     template,
+    content,
+  } = props
+
+  const {
     title,
     tag,
     area,
     img_address,
     btn
-  } = props
+  } = content
 
   return (
     <div className="use-tag">
@@ -46,11 +50,13 @@ function OperationList(props) {
 }
 
 OperationList.propTypes = {
-  title: PropTypes.string,
-  tag: PropTypes.array,
-  area: PropTypes.string,
-  img_address: PropTypes.string,
-  btn: PropTypes.string
+  content: PropTypes.shape({
+    title: PropTypes.string,
+    tag: PropTypes.array,
+    area: PropTypes.string,
+    img_address: PropTypes.string,
+    btn: PropTypes.string
+  })
 }
 
 export default React.memo(OperationList)

@@ -1,0 +1,15 @@
+cutlist1:
+    comp: CutList
+    left_editor: LeftPanelCutList
+    template: cutlist1
+    name: 列表
+    style:
+      color: '#333'
+    content:
+      title: 为什么这么多大企业都在做可视化页面搭建？
+      img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
+      link_address: 'https://www.baidu.com'
+      desc: 无需搭建开发环境和部署服务器，基于开发者工具，使用丰富的 UI 组件和行业模板研发 H5
+    extends:
+      title: 资讯列表 - 左右布局 - 1 (带摘要)
+      img: https://two.luoqintai.cn/uploads/2021/upload_ada551c5b8bb1aa9a115a004a49f20c5.png

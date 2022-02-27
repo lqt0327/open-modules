@@ -1,81 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './style.sass'
-
-const Normal2 = (props) => {
-  return (
-    <div className="comp_title_normal_2">
-      <div className="fd-title">{props.title}</div>
-    </div>
-  )
-}
-
-const Normal1 = (props) => {
-  return (
-    <div className="comp_title_normal_1">
-      <div className="fd-title" style={{color: props.color || '#333'}}>{props.title}</div>
-    </div>
-  )
-}
-
-const Dot3 = (props) => {
-  return (
-    <div className="comp_title_dot_5">
-      <h1 className="fd-title-dot">
-        <span className="fd-title-dot-marker">
-          <span className="comp_title_dot_5-marker" style={{ backgroundColor: "rgb(98, 96, 225)" }}></span>
-        </span>
-        <span className="fd-title-dot-txt">{props.title}</span>
-      </h1>
-    </div>
-  )
-}
-
-const Dot2 = (props) => {
-  return (
-    <div className="comp_title_dot_4">
-      <h1 className="fd-title-dot">
-        <span className="fd-title-dot-marker">
-          <span className="comp_title_dot_4-marker" style={{ borderColor: "rgb(98, 96, 225)" }}></span>
-        </span>
-        <span className="fd-title-dot-txt">{props.title}</span>
-      </h1>
-    </div>
-  )
-}
-
-const Dot1 = (props) => {
-  return (
-    <div className="comp_title_dot_3">
-      <h1 className="fd-title-dot">
-        <span className="fd-title-dot-marker">
-          <span className="comp_title_dot_3-marker" style={{ backgroundColor: "rgb(98, 96, 225)" }}></span>
-        </span>
-        <span className="fd-title-dot-txt">{props.title}</span>
-      </h1>
-    </div>
-  )
-}
-
-const Block1 = (props) => {
-  return (
-    <h1 className="fd-title-block comp_title_block_8">
-      <span className="fd-title-block-marker">
-        <i className="comp_title_block_8-marker" style={{ backgroundColor: "rgb(255, 158, 26)" }}></i>
-      </span>
-      <span className="fd-title-block-txt">{props.title}</span>
-      <span className="fd-title-block-marker">
-        <i className="comp_title_block_8-marker" style={{ backgroundColor: "rgb(255, 158, 26)" }}></i>
-      </span>
-    </h1>
-  )
-}
+import Normal2 from './normal2'
+import Normal1 from './normal1'
+import Dot3 from './dot3'
+import Dot2 from './dot2'
+import Dot1 from './dot1'
+import Block1 from './block1'
 
 function Title(props) {
 
   const {
     template,
-    title,
+    content,
     color
   } = props
 
@@ -83,24 +20,24 @@ function Title(props) {
     <div className="use-tag">
       {
         template === 'normal2' ?
-          <Normal2 title={title} /> :
+          <Normal2 title={content} /> :
           template === 'normal1' ?
-            <Normal1 title={title} color={color} /> :
+            <Normal1 title={content} color={color} /> :
             template === 'dot3' ?
-              <Dot3 title={title} /> :
+              <Dot3 title={content} /> :
               template === 'dot2' ?
-                <Dot2 title={title} /> :
+                <Dot2 title={content} /> :
                 template === 'dot1' ?
-                  <Dot1 title={title} /> :
+                  <Dot1 title={content} /> :
                   template === 'block1' ?
-                    <Block1 title={title} /> : ""
+                    <Block1 title={content} /> : ""
       }
     </div>
   )
 }
 
 Title.propTypes = {
-  title: PropTypes.string
+  content: PropTypes.string
 }
 
 export default React.memo(Title)

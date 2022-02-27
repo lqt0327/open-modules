@@ -15,20 +15,20 @@ const Footer = styled.div`
 function ComFooter(props) {
 
     const { 
-        img_address
+        content
     } = props
     
     return (
         <div className="use-tag">
             <Footer>
-                <img src={img_address} alt="" className="comp_footer_img_1-img" style={{width:"65px",height:"23px"}} />
+                <img src={content} alt="" className="comp_footer_img_1-img" style={{width:"65px",height:"23px"}} />
             </Footer>
         </div>
     )
 }
 
 ComFooter.propTypes = {
-    img_address: PropTypes.string
+    content: PropTypes.string
 }
 
 export default React.memo(ComFooter)

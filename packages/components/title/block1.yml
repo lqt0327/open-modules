@@ -1,0 +1,11 @@
+blocktitle1:
+    comp: Title
+    left_editor: LeftPanelTitle
+    template: block1
+    name: 标题
+    style:
+        color: '#333'
+    content: 标题内容
+    extends:
+        title: 带装饰居中对齐标题 - 1
+        img: https://two.luoqintai.cn/uploads/2021/upload_7550b1069a7b541acbbc15baf17b7129.png

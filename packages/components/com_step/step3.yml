@@ -1,0 +1,23 @@
+step3:
+    comp: ComStep
+    left_editor: LeftPanelStep
+    template: step3
+    name: 步骤
+    style:
+      color: '#333'
+    content:
+      - step: Step 1
+        title: 在线预定
+        desc: 填写信息，上传驾照正反面
+        img_address: 'https://gw.alipayobjects.com/zos/rmsportal/oXWUFANYmciCOAAEQJjD.png'
+      - step: Step 2
+        title: 翻译制作
+        desc: 对驾照信息进行翻译及认证，于 1 个工作日内完成
+        img_address: 'https://gw.alipayobjects.com/zos/rmsportal/PeDRFGbGRbNBIaQTDndp.png'
+      - step: Step 3
+        title: 寄送到家
+        desc: 在证件的最后一页贴上白底证件照，签署中文姓名
+        img_address: 'https://gw.alipayobjects.com/zos/rmsportal/BepCpOQgGGMpWAJiPiYZ.png'
+    extends:
+      title: 步骤 - 3
+      img: https://two.luoqintai.cn/uploads/2021/upload_5882c03632a8c84aeb1245936bd7799e.png

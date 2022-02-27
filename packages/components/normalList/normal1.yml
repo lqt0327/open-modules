@@ -1,0 +1,16 @@
+normallist1:
+    comp: NormalList
+    template: normal1
+    left_editor: LeftPanelNormalList
+    name: 列表
+    style:
+      color: '#333'
+    content:
+      link_address: 'https://www.baidu.com'
+      title: 为什么这么多大企业都在做可视化页面搭建？
+      tag:
+        - 市场
+        - 第一财经
+    extends:
+      title: 普通列表 - 1
+      img: https://two.luoqintai.cn/uploads/2021/upload_f77cc04f4ad2f33238ee73c83d02e9b8.png

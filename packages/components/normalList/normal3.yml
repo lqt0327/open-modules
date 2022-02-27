@@ -1,0 +1,17 @@
+normallist3:
+    comp: NormalList
+    template: normal3
+    left_editor: LeftPanelNormalList
+    name: 列表
+    style:
+      color: '#333'
+    content: 
+      link_address: 'https://www.baidu.com'
+      title: 为什么这么多大企业都在做可视化页面搭建？
+      img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
+      tag:
+        - 市场
+        - 第一财经
+    extends:
+      title: 普通列表 - 3
+      img: https://two.luoqintai.cn/uploads/2021/upload_ff4502b27a1f10e8d1d49c5d1b090f8c.png

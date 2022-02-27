@@ -5,10 +5,14 @@ import './style.sass'
 function NewList(props) {
 
   const {
+    content
+  } = props
+
+  const {
     title,
     img_address,
     tag
-  } = props
+  } = content
 
   return (
     <div className="use-tag">
@@ -60,9 +64,11 @@ function NewList(props) {
 }
 
 NewList.propTypes = {
-  title: PropTypes.string,
-  img_address: PropTypes.array,
-  tag: PropTypes.array
+  content: PropTypes.shape({
+    title: PropTypes.string,
+    img_address: PropTypes.array,
+    tag: PropTypes.array
+  })
 }
 
 export default React.memo(NewList)

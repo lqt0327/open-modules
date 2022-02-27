@@ -1,0 +1,19 @@
+operationlist2:
+    comp: OperationList
+    left_editor: LeftPanelOperationList
+    template: opt2
+    name: 列表
+    style:
+      color: '#333'
+    content:
+      title: 全栈工程师兼职
+      tag:
+        - 180元/小时
+        - 日结
+      area: 上城-区政府
+      img_address: 'https://gw.alipayobjects.com/zos/rmsportal/qnMZzTAViDGQHHjgyICm.png'
+      link_address: 'https://www.baidu.com'
+      btn: 报名
+    extends:
+      title: 带操作列表 - 2
+      img: https://two.luoqintai.cn/uploads/2021/upload_2c6353a4249bc7fab0bcd323551b2318.png

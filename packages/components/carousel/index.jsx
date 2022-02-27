@@ -5,14 +5,14 @@ import React from 'react'
 function carousel(props) {
 
     const { 
-        children,
+        content,
     } = props
 
     return (
         <div className="carousel-content" >
             <Carousel autoplay>
                 {
-                    children.map((item,i)=>{
+                    content.map((item,i)=>{
                         return (
                             <div key={i}>
                                 <a>
@@ -28,7 +28,7 @@ function carousel(props) {
 }
 
 carousel.propTypes = {
-    children: PropTypes.arrayOf(PropTypes.shape({
+    content: PropTypes.arrayOf(PropTypes.shape({
         img_address: PropTypes.string.isRequired,
         link_address: PropTypes.string,
     }))

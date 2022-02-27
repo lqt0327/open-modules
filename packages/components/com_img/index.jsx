@@ -6,9 +6,13 @@ function ComponentImg(props) {
 
     const { 
         template,
+        content
+    } = props
+
+    const {
         img_address,
         desc
-    } = props
+    } = content
 
     return (
         <div className="use-tag">
@@ -25,8 +29,10 @@ function ComponentImg(props) {
 }
 
 ComponentImg.propTypes = {
-    img_address: PropTypes.string,
-    desc: PropTypes.string
+    content: PropTypes.shape({
+        img_address: PropTypes.string,
+        desc: PropTypes.string
+    })
 }
 
 export default React.memo(ComponentImg)

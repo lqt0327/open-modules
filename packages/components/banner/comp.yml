@@ -2,5 +2,12 @@ banner1:
     comp: Banner
     template: banner
     left_editor: LeftPanelBanner
-    link_address: 'https://www.baidu.com'
-    img_address: 'https://gw.alipayobjects.com/zos/rmsportal/nKBqduiIsQWrHPVehZrG.png'
+    name: BANNER
+    style:
+        width: 100%
+    content:
+        link_address: 'https://www.baidu.com'
+        img_address: 'https://gw.alipayobjects.com/zos/rmsportal/nKBqduiIsQWrHPVehZrG.png'
+    extends:
+        title: 非通栏 Banner - 1
+        img: https://two.luoqintai.cn/uploads/2021/upload_44679e596ba8fdf2da634760ffb86f77.png

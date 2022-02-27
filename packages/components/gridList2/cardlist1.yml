@@ -1,0 +1,16 @@
+cardlist1:
+    comp: GridList2
+    left_editor: LeftPanelCardList
+    template: cardlist1
+    name: 列表
+    style:
+      color: '#333'
+    content:
+      tag: 旅行
+      title: 海外旅行
+      link_address: 'https://www.baidu.com'
+      subtitle: 多国特色签证
+      img_address: 'https://gw.alipayobjects.com/zos/rmsportal/uEzOwVPOgaIuMJUACDIg.png'
+    extends:
+      title: 卡片列表 - 1
+      img: https://two.luoqintai.cn/uploads/2021/upload_1bba24e10a41a775e88cb08483a45c11.png

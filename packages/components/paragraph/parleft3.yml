@@ -1,0 +1,15 @@
+parleft3:
+    comp: Paragraph
+    left_editor: LeftPanelParleft
+    template: parleft3
+    name: 段落
+    style:
+      color: '#333'
+    content:
+      title: 标题
+      text: >-
+        <div>1. 负责部门的产品规划、设计和产品生命周期管理；<br />2.
+        基于用户体验设计理念，结合用户需求和产品技术架构，完成产品/功能的概念设计和原型展示；</div>
+    extends:
+      title: 小标题+正文 - 左对齐 - 3
+      img: https://two.luoqintai.cn/uploads/2021/upload_b2ff8af24671638c341220078f37f323.png

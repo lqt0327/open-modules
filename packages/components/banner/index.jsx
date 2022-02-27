@@ -6,8 +6,14 @@ import PropTypes from 'prop-types'
 function Banner(props) {
     
     const { 
-        img_address,
+        content,
     } = props
+
+    const {
+        link_address,
+        img_address
+    } = content
+
     return (
         <div className={cx("banner",props.className)}>
             <a>
@@ -18,7 +24,11 @@ function Banner(props) {
 }
 
 Banner.propTypes = {
-    img_address: PropTypes.string.isRequired,
+    content: PropTypes.shape({
+        img_address: PropTypes.string.isRequired,
+        link_address: PropTypes.string
+    })
+    
 }
 
 export default Banner

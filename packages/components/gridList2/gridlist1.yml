@@ -1,0 +1,29 @@
+gridlist1:
+    comp: GridList2
+    left_editor: LeftPanelGridList
+    template: gridlist1
+    name: 列表
+    style:
+      color: '#333'
+    content:
+      - children:
+          - title: 俄罗斯
+            subtitle: 世界杯免签办理
+            link_address: 'https://www.baidu.com'
+            img_address: 'https://gw.alipayobjects.com/zos/rmsportal/dGUxUULyLhgGvkwoNsHn.png'
+          - title: 新西兰
+            subtitle: 家庭签证
+            link_address: 'https://www.baidu.com'
+            img_address: 'https://gw.alipayobjects.com/zos/rmsportal/rnLarHmjMpKasWVMFVnZ.png'
+      - children:
+          - title: 马来西亚
+            subtitle: 旅游电子签证
+            link_address: 'https://www.baidu.com'
+            img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ifSqazvXgwLdBYrWNFQk.png'
+          - title: 日本
+            subtitle: 签证快捷办理
+            link_address: 'https://www.baidu.com'
+            img_address: 'https://gw.alipayobjects.com/zos/rmsportal/vXNwQdxjBZPdAMNaHiKy.png'
+    extends:
+      title: 网格列表 - 1
+      img: https://two.luoqintai.cn/uploads/2021/upload_7f934e75731ddec6eed0a7d69d39ef6f.png

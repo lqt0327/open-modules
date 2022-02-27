@@ -36,7 +36,7 @@ const EnteryNormal = styled.div`
 function EntryTab(props) {
 
   const {
-    children,
+    content,
   } = props
 
   return (
@@ -44,7 +44,7 @@ function EntryTab(props) {
       <div className="use-tag" style={{ position: "relative" }}>
         <section className="comp_entry_normal_1">
           {
-            children.map((item, i) => {
+            content.map((item, i) => {
               return (
                 <a className="comp_entry_normal_1-item" style={{ width: "25%" }} key={i}>
                   <img src={item["img_address"]} alt="" />
@@ -60,7 +60,7 @@ function EntryTab(props) {
 }
 
 EntryTab.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.shape({
+  content: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     img_address: PropTypes.string,
     link_address: PropTypes.string

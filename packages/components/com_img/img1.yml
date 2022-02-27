@@ -1,0 +1,13 @@
+img1:
+    comp: ComImg
+    left_editor: LeftPanelImg
+    template: img1
+    name: 配图
+    style: 
+      width: 100%
+    content:
+      link_address: 'https://www.baidu.com'
+      img_address: 'https://gw.alipayobjects.com/zos/rmsportal/hxisPCETBGwVXAdEYrke.png'
+    extends:
+      title: 配图 - 1
+      img: https://two.luoqintai.cn/uploads/2021/upload_7dc5a12625803da38d8f06561fcc873b.png

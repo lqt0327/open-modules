@@ -2,4 +2,10 @@ footer1:
     comp: ComFooter
     left_editor: LeftPanelFooter
     template: footer1
-    img_address: 'https://gw.alipayobjects.com/zos/rmsportal/XtMFIqbtszjfPnrtQnIe.png'
+    name: 页脚
+    style: 
+      width: 100%
+    content: 'https://gw.alipayobjects.com/zos/rmsportal/XtMFIqbtszjfPnrtQnIe.png'
+    extends:
+      title: 图片页脚 - 1
+      img: https://two.luoqintai.cn/uploads/2021/upload_0965d2139df21b71543825ffea1a4307.png

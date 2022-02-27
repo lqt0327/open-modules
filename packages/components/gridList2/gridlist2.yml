@@ -1,0 +1,33 @@
+gridlist2:
+    comp: GridList2
+    left_editor: LeftPanelGridList
+    template: gridlist2
+    name: 列表
+    style:
+      color: '#333'
+    content:
+      - children:
+          - title: 海外旅行
+            subtitle: 多国特色签证
+            tag: 旅行
+            link_address: 'https://www.baidu.com'
+            img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ZnGdPxoHrVXmGUqXouiU.png'
+          - title: 出国留学
+            subtitle: 全方位留学服务
+            tag: 留学
+            link_address: 'https://www.baidu.com'
+            img_address: 'https://gw.alipayobjects.com/zos/rmsportal/FpAKgrtDMKTXhIVdVfIj.png'
+      - children:
+          - title: 商务出行
+            subtitle: 出国工作安心无忧
+            tag: 商务
+            link_address: 'https://www.baidu.com'
+            img_address: 'https://gw.alipayobjects.com/zos/rmsportal/KmzovGuElReNFnhykhMf.png'
+          - title: 资产配置
+            subtitle: 沪港深基金连接境内外
+            tag: 资产
+            link_address: 'https://www.baidu.com'
+            img_address: 'https://gw.alipayobjects.com/zos/rmsportal/RfVtHjHOpezICADhNcxh.png'
+    extends:
+      title: 网格列表 - 2
+      img: https://two.luoqintai.cn/uploads/2021/upload_5b16a607ec074605c77a219d8a3644db.png

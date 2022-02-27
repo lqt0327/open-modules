@@ -1,0 +1,11 @@
+quote2:
+    comp: Quote
+    left_editor: LeftPanelQuote
+    template: quote2
+    name: 引言
+    style:
+      color: '#333'
+    content: 云凤蝶的文化：客户第一，追求极致，勇于创新，开放共赢 / 云凤蝶的品牌定位：丰富、简单、个性、开放。
+    extends:
+      title: 引言 - 2
+      img: https://two.luoqintai.cn/uploads/2021/upload_b2b91927421296951d4e2032129cb946.png

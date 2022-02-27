@@ -2,7 +2,10 @@ tab1:
     comp: Tab
     template: tab1
     left_editor: LeftPanelTab1
-    children:
+    name: TAB
+    style: 
+      width: 100%
+    content:
       - label: Tab 1
         children:
           - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
@@ -35,20 +38,7 @@ tab1:
           - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
             title: 为什么这么多大企业都在做可视化页面搭建？
             link_address: 'https://www.baidu.com'
-tab2:
-    comp: EntryTab
-    template: tab2
-    left_editor: LeftPanelTab2
-    children:
-      - label: 境外汇款
-        img_address: 'https://gw.alipayobjects.com/zos/rmsportal/AOtWvDPAJgtZPFMXHKNm.png'
-        link_address: 'https://www.baidu.com'
-      - label: 外汇结汇
-        img_address: 'https://gw.alipayobjects.com/zos/rmsportal/RgGGnFTIqGzkLIZyMFej.png'
-        link_address: 'https://www.baidu.com'
-      - label: 代理签证
-        img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ycOPKaiWZFtKyhDCxRAY.png'
-        link_address: 'https://www.baidu.com'
-      - label: 国际机票
-        img_address: 'https://gw.alipayobjects.com/zos/rmsportal/oOhXrdlcKBHAPiEatqNR.png'
-        link_address: 'https://www.baidu.com'
+    extends:
+      title: tab
+      img: https://two.luoqintai.cn/uploads/2021/upload_6d406052c3338d296324c81edc11afac.png
+      

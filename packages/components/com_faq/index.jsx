@@ -20,9 +20,13 @@ function ComFAQ(props){
 
     const { 
         template,
-        title,
         content
     } = props
+
+    const {
+        title,
+        text
+    } = content
 
     return (
         <div className="use-tag">
@@ -41,7 +45,7 @@ function ComFAQ(props){
                             <h1 className="fd-title">{title}</h1>
                             <div 
                                 className="comp_faq_normal_1-body-content"
-                                dangerouslySetInnerHTML={{__html:marked(content)}}
+                                dangerouslySetInnerHTML={{__html:marked(text)}}
                             >
                             </div>
                         </div>
@@ -53,8 +57,10 @@ function ComFAQ(props){
 }
 
 ComFAQ.propTypes = {
-    content: PropTypes.string,
-    title: PropTypes.string
+    content: PropTypes.shape({
+        text: PropTypes.string,
+        title: PropTypes.string
+    })  
 }
 
 export default React.memo(ComFAQ)

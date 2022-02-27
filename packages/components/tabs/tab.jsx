@@ -33,7 +33,7 @@ function Tab(props) {
     template,
     left_editor,
     id,
-    children,
+    content,
     index
   } = props
 
@@ -43,7 +43,7 @@ function Tab(props) {
         changePanelStateDispatch([left_editor, template], index)
       }}>
         {
-          children.map((item, i) => {
+          content.map((item, i) => {
             return (
               <TabPane tab={item["label"]} key={i + 1}>
                 {
@@ -63,7 +63,7 @@ Tab.propTypes = {
   changePanelStateDispatch: PropTypes.func,
   type: PropTypes.string,
   id: PropTypes.string.isRequired,
-  children: PropTypes.arrayOf(PropTypes.shape({
+  content: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     children: PropTypes.arrayOf(PropTypes.shape({
       img_address: PropTypes.string,

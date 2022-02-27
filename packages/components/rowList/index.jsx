@@ -5,14 +5,14 @@ import './style.sass'
 function RowList(props) {
 
   const {
-    children,
+    content,
   } = props
 
   return (
     <div className="use-tag">
       <div className="fd-grid comp_list_v_1">
         {
-          children.map((item, i) => {
+          content.map((item, i) => {
             return (
               <div className="fd-grid-row" key={i}>
                 <div className="fd-grid-col">
@@ -40,7 +40,7 @@ function RowList(props) {
 }
 
 RowList.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.shape({
+  content: PropTypes.arrayOf(PropTypes.shape({
     link_address: PropTypes.string,
     img_address: PropTypes.string,
     title: PropTypes.string,

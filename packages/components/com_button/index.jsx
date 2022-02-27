@@ -1,49 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import './style.sass'
-
-const Btn3 = (props) => {
-
-    const { text } = props
-
-    return (
-        <footer className="fd-fixed-footer comp_btn_full">
-            <div className="fd-fixed-footer-inner">
-                <button className="fd-button comp_btn_full-btn" style={{ background: "rgb(229,177,101)" }} type="button">{text}</button>
-            </div>
-        </footer>
-    )
-}
-
-const Btn2 = (props) => {
-
-    const { text } = props
-
-    return (
-        <footer className="fd-fixed-footer comp_btn_stick">
-            <div className="fd-fixed-footer-inner">
-                <div className="comp_btn_stick-wrap">
-                    <button className="fd-button comp_btn_stick-btn" style={{ background: "rgb(229,177,101)" }} type="button">{text}</button>
-                </div>
-            </div>
-        </footer>
-    )
-}
-
-const Btn1 = (props) => {
-    const { text } = props
-    return (
-        <div className="comp_btn_normal-wrap">
-            <button className="fd-button comp_btn_normal-btn" style={{ background: "rgb(229,177,101)" }} type="button">{text}</button>
-        </div>
-    )
-}
+import Btn3 from './btn3'
+import Btn2 from './btn2'
+import Btn1 from './btn1'
 
 function ComButton(props) {
     const { 
         template,
-        text
+        content
     } = props
+
+    const {
+        text,
+        link_address
+    } = content
 
     return (
         <div className="use-tag">
@@ -66,7 +37,10 @@ function ComButton(props) {
 }
 
 ComButton.propTypes = {
-    text: PropTypes.string
+    content: PropTypes.shape({
+        text: PropTypes.string,
+        link_address: PropTypes.string
+    })
 }
 
 export default React.memo(ComButton)

@@ -2,7 +2,10 @@ rowlist1:
     comp: RowList
     left_editor: LeftPanelRowList
     template: rowlist1
-    children:
+    name: 列表
+    style: 
+      width: 100%
+    content:
       - link_address: 'https://www.baidu.com'
         img_address: 'https://gw.alipayobjects.com/zos/rmsportal/qnMZzTAViDGQHHjgyICm.png'
         title: 银行存款证明
@@ -11,3 +14,6 @@ rowlist1:
         img_address: 'https://gw.alipayobjects.com/zos/rmsportal/qnMZzTAViDGQHHjgyICm.png'
         title: 全币种信用卡
         tag: 信用卡
+    extends:
+      title: 纵向列表 - 1
+      img: https://two.luoqintai.cn/uploads/2021/upload_12d54cd8acb9ceff49847e78acac451b.png

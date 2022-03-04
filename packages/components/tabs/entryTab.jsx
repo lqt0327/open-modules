@@ -46,10 +46,10 @@ function EntryTab(props) {
           {
             content.map((item, i) => {
               return (
-                <a className="comp_entry_normal_1-item" style={{ width: "25%" }} key={i}>
+                <div className="comp_entry_normal_1-item" style={{ width: "25%" }} key={i}>
                   <img src={item["img_address"]} alt="" />
                   <p>{item["label"]}</p>
-                </a>
+                </div>
               )
             })
           }

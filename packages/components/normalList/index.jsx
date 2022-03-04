@@ -19,7 +19,7 @@ function NormalList(props) {
   return (
     <div className="use-tag">
       <div>
-        <a className={cx("fd-link fd-subject comp_list_normal_2", { "reverse": template === 'normal3' ? true : false })}>
+        <div className={cx("fd-link fd-subject comp_list_normal_2", { "reverse": template === 'normal3' ? true : false })}>
           <div className={cx("fd-subject-cover", { "hide": template === 'normal1' ? true : false })} style={{ backgroundImage: 'url(' + img_address + ')' }}></div>
           <div className="fd-subject-content">
             <div>
@@ -37,7 +37,7 @@ function NormalList(props) {
               </span>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   )

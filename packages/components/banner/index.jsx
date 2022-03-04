@@ -10,15 +10,15 @@ function Banner(props) {
     } = props
 
     const {
-        link_address,
+        // link_address,
         img_address
     } = content
 
     return (
         <div className={cx("banner",props.className)}>
-            <a>
+            <div>
                 <img src={img_address} alt=""/>
-            </a>
+            </div>
         </div>
     )
 }

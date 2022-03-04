@@ -14,12 +14,12 @@ const CompList = (arr) => {
     arr.map((item2, j) => {
       return (
         <div key={j}>
-          <a className="fd-link fd-subject">
+          <div className="fd-link fd-subject">
             <div className="fd-subject-cover" style={{ backgroundImage: 'url(' + item2["img_address"] + ')' }}></div>
             <div className="fd-subject-content">
               <h1 className="fd-title line-cut-2">{item2["title"]}</h1>
             </div>
-          </a>
+          </div>
         </div>
       )
     })

@@ -17,12 +17,11 @@ function RowList(props) {
               <div className="fd-grid-row" key={i}>
                 <div className="fd-grid-col">
                   <div className="fd-link fd-jumbo size-mdx comp_list_v_1-jumbo">
-                    <a
-                      href=""
+                    <div
                       className="fd-link fd-cover fd-jumbo-cover"
                       style={{ backgroundImage: 'url(' + item.img_address + ')' }}
                     >
-                    </a>
+                    </div>
                     <div className="fd-jumbo-mask"></div>
                     <div className="fd-jumbo-content">{item.title}</div>
                     <div className="fd-jumbo-tag">

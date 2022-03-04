@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import './style.sass'
 
 const GridCol = (props) => {
@@ -8,7 +8,7 @@ const GridCol = (props) => {
     arr.children.map((item2, j) => {
       return (
         <div className="fd-grid-col" key={j}>
-          <a className="fd-link comp_list_grid_5-item">
+          <div className="fd-link comp_list_grid_5-item">
             <div className="fd-link fd-jumbo size-sm">
               <div className="fd-link fd-cover fd-jumbo-cover" style={{ backgroundImage: "url(" + item2.img_address + ")" }}></div>
               <div className="fd-jumbo-mask"></div>
@@ -18,7 +18,7 @@ const GridCol = (props) => {
                 </h1>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       )
     })

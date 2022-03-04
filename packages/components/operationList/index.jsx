@@ -21,7 +21,7 @@ function OperationList(props) {
   return (
     <div className="use-tag">
       <div>
-        <a className="fd-link fd-subject comp_list_operation_1">
+        <div className="fd-link fd-subject comp_list_operation_1">
           <div className={cx({ "fd-subject-cover": template === 'opt1' ? false : true })} style={{ backgroundImage: "url(" + img_address + ")" }}></div>
           <div className="fd-subject-content">
             <div>
@@ -43,7 +43,7 @@ function OperationList(props) {
           <div className="fd-subject-action">
             <button className="fd-button">{btn}</button>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   )

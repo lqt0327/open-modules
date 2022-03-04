@@ -15,9 +15,9 @@ function carousel(props) {
                     content.map((item,i)=>{
                         return (
                             <div key={i}>
-                                <a>
+                                <div>
                                     <img src={item["img_address"]} alt={i+1} width="375" height="140" />
-                                </a>
+                                </div>
                             </div>
                         )
                     })

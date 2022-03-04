@@ -13,7 +13,7 @@ function ComButton(props) {
 
     const {
         text,
-        link_address
+        // link_address
     } = content
 
     return (

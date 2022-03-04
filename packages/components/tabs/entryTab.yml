@@ -1,23 +1,22 @@
-tab2:
-    comp: EntryTab
-    template: tab2
-    left_editor: LeftPanelTab2
-    name: TAB
-    style: 
-      width: 100%
-    content:
-      - label: 境外汇款
-        img_address: 'https://gw.alipayobjects.com/zos/rmsportal/AOtWvDPAJgtZPFMXHKNm.png'
-        link_address: 'https://www.baidu.com'
-      - label: 外汇结汇
-        img_address: 'https://gw.alipayobjects.com/zos/rmsportal/RgGGnFTIqGzkLIZyMFej.png'
-        link_address: 'https://www.baidu.com'
-      - label: 代理签证
-        img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ycOPKaiWZFtKyhDCxRAY.png'
-        link_address: 'https://www.baidu.com'
-      - label: 国际机票
-        img_address: 'https://gw.alipayobjects.com/zos/rmsportal/oOhXrdlcKBHAPiEatqNR.png'
-        link_address: 'https://www.baidu.com'
-    extends:
-      title: 普通功能入口 - 1
-      img: https://two.luoqintai.cn/uploads/2021/upload_5e1fbe8ff66d33429943d22403f2f336.png
+comp: EntryTab
+template: tab2
+left_editor: LeftPanelTab2
+name: TAB
+style: 
+  width: 100%
+content:
+  - label: 境外汇款
+    img_address: 'https://gw.alipayobjects.com/zos/rmsportal/AOtWvDPAJgtZPFMXHKNm.png'
+    link_address: 'https://www.baidu.com'
+  - label: 外汇结汇
+    img_address: 'https://gw.alipayobjects.com/zos/rmsportal/RgGGnFTIqGzkLIZyMFej.png'
+    link_address: 'https://www.baidu.com'
+  - label: 代理签证
+    img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ycOPKaiWZFtKyhDCxRAY.png'
+    link_address: 'https://www.baidu.com'
+  - label: 国际机票
+    img_address: 'https://gw.alipayobjects.com/zos/rmsportal/oOhXrdlcKBHAPiEatqNR.png'
+    link_address: 'https://www.baidu.com'
+extends:
+  title: 普通功能入口 - 1
+  img: https://two.luoqintai.cn/uploads/2021/upload_5e1fbe8ff66d33429943d22403f2f336.png

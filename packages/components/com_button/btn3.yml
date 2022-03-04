@@ -1,13 +1,12 @@
-btn3:
-    comp: ComButton
-    left_editor: LeftPanelBtn
-    template: btn3
-    name: 按钮
-    style: 
-      color: '#333'
-    content: 
-      link_address: 'https://www.baidu.com'
-      text: 立即申请
-    extends:
-      title: 通栏吸底按钮
-      img: https://two.luoqintai.cn/uploads/2021/upload_6e6a6405291f9414cc54737ce8355602.png
+comp: ComButton
+left_editor: LeftPanelBtn
+template: btn3
+name: 按钮
+style: 
+  color: '#333'
+content: 
+  link_address: 'https://www.baidu.com'
+  text: 立即申请
+extends:
+  title: 通栏吸底按钮
+  img: https://two.luoqintai.cn/uploads/2021/upload_6e6a6405291f9414cc54737ce8355602.png

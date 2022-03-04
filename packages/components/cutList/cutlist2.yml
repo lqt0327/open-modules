@@ -1,14 +1,13 @@
-cutlist2:
-    comp: CutList
-    left_editor: LeftPanelCutList
-    template: cutlist2
-    name: 列表
-    style:
-      color: '#333'
-    content:
-      title: 为什么这么多大企业都在做可视化页面搭建？
-      link_address: 'https://www.baidu.com'
-      img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
-    extends:
-      title: 资讯列表 - 左右布局 - 2
-      img: https://two.luoqintai.cn/uploads/2021/upload_81cb156a8fd328d09a00672b0e8ecd7a.png
+comp: CutList
+left_editor: LeftPanelCutList
+template: cutlist2
+name: 列表
+style:
+  color: '#333'
+content:
+  title: 为什么这么多大企业都在做可视化页面搭建？
+  link_address: 'https://www.baidu.com'
+  img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
+extends:
+  title: 资讯列表 - 左右布局 - 2
+  img: https://two.luoqintai.cn/uploads/2021/upload_81cb156a8fd328d09a00672b0e8ecd7a.png

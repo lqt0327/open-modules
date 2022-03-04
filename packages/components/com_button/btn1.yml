@@ -1,13 +1,12 @@
-btn1:
-    comp: ComButton
-    left_editor: LeftPanelBtn
-    template: btn1
-    name: 按钮
-    style:
-      color: '#333'
-    content:
-      link_address: 'https://www.baidu.com'
-      text: 提交
-    extends:
-      title: 普通按钮
-      img: https://two.luoqintai.cn/uploads/2021/upload_707e3b8cd91edce3451a1624bf92723c.png
+comp: ComButton
+left_editor: LeftPanelBtn
+template: btn1
+name: 按钮
+style:
+  color: '#333'
+content:
+  link_address: 'https://www.baidu.com'
+  text: 提交
+extends:
+  title: 普通按钮
+  img: https://two.luoqintai.cn/uploads/2021/upload_707e3b8cd91edce3451a1624bf92723c.png

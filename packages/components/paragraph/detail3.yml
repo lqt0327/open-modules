@@ -1,16 +1,14 @@
-detail3:
-    comp: Paragraph
-    left_editor: LeftPanelParleft
-    template: detail3
-    name: 段落
-    style:
-      color: '#333'
-    content:
-      title: 体验技术部产品专家
-      tag:
-        - 10K/每月
-        - 月结
-    extends:
-      title: 文章标题 + 文章信息 - 3
-      img: https://two.luoqintai.cn/uploads/2021/upload_57289752957b6a09a78e73c38a924b8a.png
-      
+comp: Paragraph
+left_editor: LeftPanelParleft
+template: detail3
+name: 段落
+style:
+  color: '#333'
+content:
+  title: 体验技术部产品专家
+  tag:
+    - 10K/每月
+    - 月结
+extends:
+  title: 文章标题 + 文章信息 - 3
+  img: https://two.luoqintai.cn/uploads/2021/upload_57289752957b6a09a78e73c38a924b8a.png

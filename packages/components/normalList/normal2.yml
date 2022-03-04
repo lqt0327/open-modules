@@ -1,17 +1,16 @@
-normallist2:
-    comp: NormalList
-    template: normal2
-    left_editor: LeftPanelNormalList
-    name: 列表
-    style:
-      color: '#333'
-    content:
-      link_address: 'https://www.baidu.com'
-      title: 为什么这么多大企业都在做可视化页面搭建？
-      img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
-      tag:
-        - 市场
-        - 第一财经
-    extends:
-      title: 普通列表 - 2
-      img: https://two.luoqintai.cn/uploads/2021/upload_0994ec8570ce26cb281fd5f2db3c7a5c.png
+comp: NormalList
+template: normal2
+left_editor: LeftPanelNormalList
+name: 列表
+style:
+  color: '#333'
+content:
+  link_address: 'https://www.baidu.com'
+  title: 为什么这么多大企业都在做可视化页面搭建？
+  img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
+  tag:
+    - 市场
+    - 第一财经
+extends:
+  title: 普通列表 - 2
+  img: https://two.luoqintai.cn/uploads/2021/upload_0994ec8570ce26cb281fd5f2db3c7a5c.png

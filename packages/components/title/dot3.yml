@@ -1,11 +1,11 @@
-dottitle3:
-    comp: Title
-    left_editor: LeftPanelTitle
-    template: dot3
-    name: 标题
-    style: 
-        color: '#333'
-    content: 标题内容
-    extends: 
-        title: 带装饰左对齐标题 - 3
-        img: https://two.luoqintai.cn/uploads/2021/upload_395376963a2aff93ad9f9be1e14e1cd3.png
+comp: Title
+left_editor: LeftPanelTitle
+template: dot3
+name: 标题
+style: 
+    color: '#333'
+    iconColor: '#6260e1'
+content: 标题内容
+extends: 
+    title: 带装饰左对齐标题 - 3
+    img: https://two.luoqintai.cn/uploads/2021/upload_395376963a2aff93ad9f9be1e14e1cd3.png

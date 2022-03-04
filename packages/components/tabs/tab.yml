@@ -1,44 +1,43 @@
-tab1:
-    comp: Tab
-    template: tab1
-    left_editor: LeftPanelTab1
-    name: TAB
-    style: 
-      width: 100%
-    content:
-      - label: Tab 1
-        children:
-          - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
-            title: 为什么这么多大企业都在做可视化页面搭建？
-            link_address: 'https://www.baidu.com'
-          - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
-            title: 为什么这么多大企业都在做可视化页面搭建？
-            link_address: 'https://www.baidu.com'
-      - label: Tab 2
-        children:
-          - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
-            title: 为什么这么多大企业都在做可视化页面搭建？
-            link_address: 'https://www.baidu.com'
-          - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
-            title: 为什么这么多大企业都在做可视化页面搭建？
-            link_address: 'https://www.baidu.com'
-      - label: Tab 3
-        children:
-          - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
-            title: 为什么这么多大企业都在做可视化页面搭建？
-            link_address: 'https://www.baidu.com'
-          - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
-            title: 为什么这么多大企业都在做可视化页面搭建？
-            link_address: 'https://www.baidu.com'
-      - label: Tab 4
-        children:
-          - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
-            title: 为什么这么多大企业都在做可视化页面搭建？
-            link_address: 'https://www.baidu.com'
-          - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
-            title: 为什么这么多大企业都在做可视化页面搭建？
-            link_address: 'https://www.baidu.com'
-    extends:
-      title: tab
-      img: https://two.luoqintai.cn/uploads/2021/upload_6d406052c3338d296324c81edc11afac.png
+comp: Tab
+template: tab1
+left_editor: LeftPanelTab1
+name: TAB
+style: 
+  width: 100%
+content:
+  - label: Tab 1
+    children:
+      - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
+        title: 为什么这么多大企业都在做可视化页面搭建？
+        link_address: 'https://www.baidu.com'
+      - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
+        title: 为什么这么多大企业都在做可视化页面搭建？
+        link_address: 'https://www.baidu.com'
+  - label: Tab 2
+    children:
+      - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
+        title: 为什么这么多大企业都在做可视化页面搭建？
+        link_address: 'https://www.baidu.com'
+      - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
+        title: 为什么这么多大企业都在做可视化页面搭建？
+        link_address: 'https://www.baidu.com'
+  - label: Tab 3
+    children:
+      - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
+        title: 为什么这么多大企业都在做可视化页面搭建？
+        link_address: 'https://www.baidu.com'
+      - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
+        title: 为什么这么多大企业都在做可视化页面搭建？
+        link_address: 'https://www.baidu.com'
+  - label: Tab 4
+    children:
+      - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
+        title: 为什么这么多大企业都在做可视化页面搭建？
+        link_address: 'https://www.baidu.com'
+      - img_address: 'https://gw.alipayobjects.com/zos/rmsportal/ebuQSFOLCrYqpCHmfxll.png'
+        title: 为什么这么多大企业都在做可视化页面搭建？
+        link_address: 'https://www.baidu.com'
+extends:
+  title: tab
+  img: https://two.luoqintai.cn/uploads/2021/upload_6d406052c3338d296324c81edc11afac.png
       

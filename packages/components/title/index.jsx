@@ -13,24 +13,24 @@ function Title(props) {
   const {
     template,
     content,
-    color
+    style
   } = props
 
   return (
     <div className="use-tag">
       {
         template === 'normal2' ?
-          <Normal2 title={content} /> :
+          <Normal2 title={content} style={style} /> :
           template === 'normal1' ?
-            <Normal1 title={content} color={color} /> :
+            <Normal1 title={content} style={style} /> :
             template === 'dot3' ?
-              <Dot3 title={content} /> :
+              <Dot3 title={content} style={style} /> :
               template === 'dot2' ?
-                <Dot2 title={content} /> :
+                <Dot2 title={content} style={style} /> :
                 template === 'dot1' ?
-                  <Dot1 title={content} /> :
+                  <Dot1 title={content} style={style} /> :
                   template === 'block1' ?
-                    <Block1 title={content} /> : ""
+                    <Block1 title={content} style={style} /> : ""
       }
     </div>
   )
